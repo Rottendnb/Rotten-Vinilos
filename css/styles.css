@@ -1,0 +1,476 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y colores principales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #000;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid crimson;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: crimson;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: crimson;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Sección Bienvenida */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: crimson;
+}
+
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#buscador-vinilos {
+  margin-top: 3rem;
+}
+
+#buscador-vinilos input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+#resultados-busqueda {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#resultados-busqueda li {
+  background-color: #1c1c1c;
+  padding: 0.8rem;
+  border-left: 4px solid crimson;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Noticias */
+#noticias {
+  margin-top: 3rem;
+}
+
+#contenedor-noticias > div {
+  background-color: #222;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 5px solid crimson;
+  border-radius: 5px;
+}
+
+#contenedor-noticias h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+#contenedor-noticias p {
+  color: #ccc;
+}
+
+/* Vinilos destacados */
+#destacados {
+  margin-top: 2rem;
+}
+
+.galeria-vinilos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.vinilo {
+  background-color: #222;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.vinilo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.vinilo p {
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.vinilo:hover {
+  transform: scale(1.05);
+}
+
+#estilos {
+  margin-top: 3rem;
+}
+
+.estilos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.estilo {
+  background-color: #1a1a1a;
+  border-left: 4px solid crimson;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.estilo:hover {
+  transform: translateY(-5px);
+}
+
+.estilo h3 {
+  color: crimson;
+  margin-bottom: 0.5rem;
+}
+
+.estilo p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+#novedades {
+  margin-top: 3rem;
+}
+
+.novedades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.disco-novedad {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.disco-novedad img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.disco-novedad h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.disco-novedad p {
+  color: crimson;
+  font-weight: bold;
+}
+
+.disco-novedad:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid crimson;
+}
+
+
+
+.footer-redes {
+  margin-bottom: 1rem;
+}
+
+.footer-redes a {
+  margin: 0 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-redes img {
+  width: 100%;
+  height: auto;
+  filter: invert(1);
+  transition: transform 0.2s;
+}
+
+.footer-redes img:hover {
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.aviso-legal {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+
+
+/*PRODUCTOS*/
+
+#catalogo-productos {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.producto {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.producto h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.producto p {
+  color: crimson;
+  font-weight: bold;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+#filtros {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto 1rem;
+  flex-wrap: wrap;
+}
+
+#buscador, #filtro-estilo {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  margin-top: 0.5rem;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: darkred;
+}
+
+
+/*----------------------CONTACTO----------------------------------*/
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: crimson;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+      background: #222;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    fieldset {
+      border: 1px solid #444;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: crimson;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .extras {
+      margin-top: 0.5rem;
+    }
+
+    .presupuesto {
+      font-size: 1.5rem;
+      color: lime;
+      margin-top: 1rem;
+    }
+
+    .botones {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background: crimson;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .error {
+      color: orange;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+      display: block;
+    }
+ 
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    header, footer {
+      background: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .contacto {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .info {
+      margin-bottom: 2rem;
+    }
+
+    #map {
+      height: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn-ubicacion {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    

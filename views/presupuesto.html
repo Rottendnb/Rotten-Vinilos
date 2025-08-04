@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto - Rotten Vinilos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../disco-de-vinilo.png">
+</head>
+<body>
+
+      <header>
+    <h1><h1>Rotten Records</h1></h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./presupuesto.html">Presupuesto</a></li>
+        <li><a href="./contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Solicitar presupuesto</h1>
+
+  <form id="formulario">
+    <!-- Datos de contacto -->
+    <label>Nombre:
+      <input type="text" id="nombre" maxlength="15">
+      <span class="error" id="error-nombre">Solo letras, máximo 15 caracteres</span>
+    </label>
+
+    <label>Apellidos:
+      <input type="text" id="apellidos" maxlength="40">
+      <span class="error" id="error-apellidos">Solo letras, máximo 40 caracteres</span>
+    </label>
+
+    <label>Teléfono:
+      <input type="text" id="telefono" maxlength="9">
+      <span class="error" id="error-telefono">Solo 9 dígitos</span>
+    </label>
+
+    <label>Email:
+      <input type="email" id="email">
+      <span class="error" id="error-email">Correo inválido</span>
+    </label>
+
+    <!-- Presupuesto -->
+    <label>Producto:
+      <select id="producto">
+        <option value="30">Vinilo clásico - 30€</option>
+        <option value="50">Vinilo edición especial - 50€</option>
+        <option value="70">3x2 en vinilos - 60€</option>
+      </select>
+    </label>
+
+    <label>Plazo de entrega (días):
+      <input type="number" id="plazo" min="1" value="7">
+    </label>
+
+    <div class="extras">
+      <label><input type="checkbox" class="extra" value="5"> Envío urgente (+5€)</label>
+      <label><input type="checkbox" class="extra" value="10"> Edición firmada (+10€)</label>
+      <label><input type="checkbox" class="extra" value="7"> Envoltorio regalo (+7€)</label>
+    </div>
+
+    <div class="presupuesto">Total estimado: <span id="total">0 €</span></div>
+
+    <label>
+      <input type="checkbox" id="condiciones"> Acepto las condiciones
+      <span class="error" id="error-condiciones">Debes aceptar las condiciones</span>
+    </label>
+
+    <div class="botones">
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
+    </div>
+  </form>
+   <footer>
+  
+   <div class="footer-redes">
+      <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/?lang=es" title="Twitter/X" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X" /></a>
+      <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+   </div>
+
+  <div class="footer-info">
+    <p><strong>Dirección:</strong> Avenida Eduardo Dato, s/n, 41005 Sevilla, España</p>
+    <p><a href="#" class="aviso-legal">Aviso legal</a></p>
+    <p>&copy; 2020 Rotten Records</p>
+  </div>
+</footer>
+
+  <script src="../js/script2.js"></script>
+</body>
+</html>

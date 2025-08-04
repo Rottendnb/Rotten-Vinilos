@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - Rotten Vinilos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../disco-de-vinilo.png">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+</head>
+<body>
+<header>
+    
+  <h1>Rotten Records</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./presupuesto.html">Presupuesto</a></li>
+        <li><a href="./contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    
+
+</header>
+
+  <main class="contacto">
+    <section class="info">
+      <h2>¿Dónde estamos?</h2>
+      <p><strong>Dirección:</strong> C. Sevilla Fútbol Club, s/n, 41005 Sevilla</p>
+      <p><strong>Teléfono:</strong> +34 666 131 213</p>
+      <p><strong>Email:</strong> Dnb@rottenvinilos.com</p>
+    </section>
+
+    <section>
+      <h2>Ubicación y cómo llegar</h2>
+      <div id="map"></div>
+      <button class="btn-ubicacion" onclick="marcarRuta()">Calcular ruta desde tu ubicación</button>
+    </section>
+  </main>
+
+  <footer>
+  
+   <div class="footer-redes">
+      <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/?lang=es" title="Twitter/X" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X" /></a>
+      <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+   </div>
+
+  <div class="footer-info">
+    <p><strong>Dirección:</strong> Avenida Eduardo Dato, s/n, 41005 Sevilla, España</p>
+    <p><a href="#" class="aviso-legal">Aviso legal</a></p>
+    <p>&copy; 2020 Rotten Records</p>
+  </div>
+</footer>
+    
+  
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Routing machine -->
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+  <script src="../js/script1.js"></script>
+  
+</body>
+</html>

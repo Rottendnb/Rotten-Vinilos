@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos | Rotten Vinilos</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="../disco-de-vinilo.png">
+</head>
+<body>
+  <header>
+    <h1><h1>Rotten Records</h1></h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./presupuesto.html">Presupuesto</a></li>
+        <li><a href="./contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <section id="filtros">
+            <input type="text" id="buscador" placeholder="Buscar vinilo..." />
+            <select id="filtro-estilo">
+                <option value="todos">Todos los estilos</option>
+                <option value="punk">Punk</option>
+                <option value="rock">Rock</option>
+                <option value="grunge">Metal</option>
+                <option value="alternativo">Pop</option>
+            </select>
+       </section>
+
+        <section id="catalogo-productos">
+            <h2>Galería de Vinilos</h2>
+            <div id="productos-container" class="productos-grid"></div>
+        </section>
+           <!--  <section id="catalogo-productos">
+                <h2>Vinilos Disponibles</h2>
+                <div id="productos-container" class="productos-grid">
+                     Productos insertados con JS 
+                </div>
+            </section> -->
+  </main>
+
+  <footer>
+  
+   <div class="footer-redes">
+      <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/?lang=es" title="Twitter/X" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X" /></a>
+      <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+   </div>
+
+  <div class="footer-info">
+    <p><strong>Dirección:</strong> Avenida Eduardo Dato, s/n, 41005 Sevilla, España</p>
+    <p><a href="#" class="aviso-legal">Aviso legal</a></p>
+    <p>&copy; 2020 Rotten Records</p>
+  </div>
+</footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
